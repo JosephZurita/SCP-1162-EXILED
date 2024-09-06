@@ -1,7 +1,6 @@
 using Exiled.API.Features.Items;
 using Exiled.Events.EventArgs.Player;
 using UnityEngine;
-using SCP1162.API;
 using PlayerRoles;
 using Exiled.API.Features;
 using Exiled.API.Enums;
@@ -18,19 +17,18 @@ namespace SCP1162
 
         public void OnItemDropped(DroppingItemEventArgs ev)
         {
+
             if (!ev.IsAllowed || Vector3.Distance(ev.Player.Position, scp1162Pos) >= 8.2f) return;
 
             if (plugin.Config.UseHints)
                 ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
             else
                 ev.Player.Broadcast(plugin.Config.ItemDropMessageDuration, plugin.Config.ItemDropMessage, Broadcast.BroadcastFlags.Normal, true);
-            ev.IsAllowed = false;
-            var oldItem = ev.Item.Base.ItemTypeId;
+
             ev.Player.RemoveItem(ev.Item);
-            var newItemType = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
-            var eventArgs = new UsingScp1162EventArgs(ev.Player, newItemType, oldItem);
-            Scp1162Event.OnUsingScp1162(eventArgs);
-            var newItem = Item.Create(eventArgs.ItemAfter);
+
+            Item newItem = Item.Create(plugin.Config.ItemDrops[Random.Range(0, plugin.Config.ItemDrops.Count)]);
+
             ev.Player.AddItem(newItem);
             ev.Player.DropItem(newItem);
         }
