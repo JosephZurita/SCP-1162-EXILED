@@ -16,37 +16,62 @@ scp1162:
   # Change the message that displays when you drop an item through SCP-1162.
   item_drop_message: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
   item_drop_message_duration: 5
-  # The list of possible items.
-  chances:
-  - KeycardO5
-  - SCP500
-  - MicroHID
-  - KeycardNTFCommander
-  - KeycardContainmentEngineer
-  - SCP268
-  - GunCOM15
-  - GrenadeFrag
-  - SCP207
-  - Adrenaline
-  - GunUSP
-  - KeycardFacilityManager
-  - Medkit
-  - KeycardNTFLieutenant
-  - KeycardSeniorGuard
-  - Disarmer
-  - KeycardZoneManager
-  - KeycardScientistMajor
-  - KeycardGuard
-  - Radio
-  - Ammo556
-  - Ammo762
-  - Ammo9mm
-  - GrenadeFlash
-  - WeaponManagerTablet
-  - KeycardScientist
-  - KeycardJanitor
-  - Coin
-  - Flashlight
+  # The list of possible items which can be dropped
+  item_drops:
+	- KeycardScientist
+	- KeycardResearchCoordinator
+	- KeycardZoneManager
+	- KeycardGuard
+	- KeycardMTFPrivate
+	- KeycardContainmentEngineer
+	- KeycardMTFOperative
+	- KeycardMTFCaptain
+	- KeycardFacilityManager
+	- KeycardChaosInsurgency
+	- KeycardO5
+	- Radio
+	- GunCOM15
+	- Medkit
+	- Flashlight
+	- MicroHID
+	- SCP500
+	- SCP207
+	- Ammo12gauge
+	- GunE11SR
+	- GunCrossvec
+	- Ammo556x45
+	- GunFSP9
+	- GunLogicer
+	- GrenadeHE
+	- GrenadeFlash
+	- Ammo44cal
+	- Ammo762x39
+	- Ammo9x19
+	- GunCOM18
+	- SCP018
+	- SCP268
+	- Adrenaline
+	- Painkillers
+	- Coin
+	- ArmorLight
+	- ArmorCombat
+	- ArmorHeavy
+	- GunRevolver
+	- GunAK
+	- GunShotgun
+	- SCP330
+	- SCP2176
+	- SCP244a
+	- SCP244b
+	- SCP1853
+	- ParticleDisruptor
+	- GunCom45
+	- SCP1576
+	- Jailbird
+	- AntiSCP207
+	- GunFRMG0
+	- GunA7
+	- Lantern
 ```
 
 

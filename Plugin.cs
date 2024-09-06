@@ -13,6 +13,8 @@ namespace SCP1162
 
         public override void OnEnabled()
         {
+            /* Null Item is not a valid item type to add so remove if in the config */
+            Config.ItemDrops.Remove(ItemType.None);
             EventHandlers = new EventHandlers(this);
             Exiled.Events.Handlers.Server.RoundStarted += EventHandlers.OnRoundStart;
             Exiled.Events.Handlers.Player.DroppingItem += EventHandlers.OnItemDropped;
