@@ -8,8 +8,8 @@ namespace SCP1162
         public override string Name => "SCP1162";
         public override string Author => "xRoier";
         public EventHandlers EventHandlers;
-        public override Version Version { get; } = new Version(6, 1, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(6, 0, 0);
+        public override Version Version { get; } = new Version(9, 5, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(9, 5, 0);
 
         public override void OnEnabled()
         {
