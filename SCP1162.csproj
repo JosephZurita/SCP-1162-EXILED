@@ -61,8 +61,8 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="EXILEDOFFICIAL">
-      <Version>8.11.0</Version>
+    <PackageReference Include="ExMod.Exiled">
+      <Version>9.5.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
