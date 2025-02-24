@@ -1,8 +1,8 @@
+using Exiled.API.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using Exiled.API.Interfaces;
 
 namespace SCP1162
 {
